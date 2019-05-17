@@ -1,12 +1,11 @@
 /**
- * Clase que contiene los parámetros de las fechas.
+ * Clase que contiene los parÃ¡metros de las fechas.
  *
- * @author Nuria Rodríguez Jiménez y Sandra García-Siñeriz Herrador
  * 
  */
 public class Fecha {
 	/**
-     * Día de la reserva.
+     * DÃ­a de la reserva.
      */
     private int _dia;
     /**
@@ -14,18 +13,18 @@ public class Fecha {
      */
     private int _mes;
     /**
-     * Año de la reserva.
+     * AÃ±o de la reserva.
      */
     private int _anyo;
     
     /**
      * Constructor que recibe la fecha.
      * 
-     * @param Día
+     * @param DÃ­a
      * 
      * @param Mes
      * 
-     * @param Año
+     * @param AÃ±o
      * 
      */
      public Fecha(int dia, int mes, int anyo) {
@@ -36,9 +35,9 @@ public class Fecha {
      
      /**
       * 
-      * Devuelve el día de la reserva.
+      * Devuelve el dÃ­a de la reserva.
       * 
-      * @return Día de la reserva.
+      * @return DÃ­a de la reserva.
       * 
       */
      public int getDia() {
@@ -66,9 +65,9 @@ public class Fecha {
       
      /**
       * 
-      * Devuelve el año de la reserva.
+      * Devuelve el aÃ±o de la reserva.
       * 
-      * @return Año de la reserva.
+      * @return AÃ±o de la reserva.
       * 
       */
      public int getAnyo() {
@@ -80,7 +79,7 @@ public class Fecha {
 	}
      
      /**
-      * Constructor de copia. Se crea una copia por parámetros para poder comparar la fecha. 
+      * Constructor de copia. Se crea una copia por parÃ¡metros para poder comparar la fecha. 
       *
       * @param otra
       *            Fecha a copiar.
@@ -93,7 +92,7 @@ public class Fecha {
      
      /**
       * 
-      * Método para comparar dos fechas.
+      * MÃ©todo para comparar dos fechas.
       * 
       * @param otra
       *			Fecha a comparar
@@ -124,7 +123,7 @@ public class Fecha {
  
 	/**
 	 * 
-	 * Método para comparar dos fechas iguales.
+	 * MÃ©todo para comparar dos fechas iguales.
 	 * 
 	 * @param otra
 	 *			Fecha a comparar
@@ -140,7 +139,7 @@ public class Fecha {
 	
 	/**
 	 * 
-	 * Método para imprimir por pantalla la fecha.
+	 * MÃ©todo para imprimir por pantalla la fecha.
 	 * 
 	 */
 	
