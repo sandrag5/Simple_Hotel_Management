@@ -3,7 +3,6 @@ import java.util.ArrayList;
 /**
  * Clase que contiene el array de bloqueos.
  *
- * @author Nuria Rodríguez Jiménez y Sandra García-Siñeriz Herrador
  * 
  */
 public class Bloqueos {
@@ -46,7 +45,7 @@ public class Bloqueos {
 	/**
      * Agregado de un bloqueo a una suite.
      * 
-     * @param tamaño
+     * @param tamaÃ±o
      */
 	Bloqueos (int tamanyo) {
 		_siguiente = 0;
@@ -54,18 +53,18 @@ public class Bloqueos {
 	}
 	
 	/**
-	 * Método para obtener el número de reservas, que será el tamaño del array.
+	 * MÃ©todo para obtener el nÃºmero de reservas, que serÃ¡ el tamaÃ±o del array.
 	 */
 	public int obtenerNumBloqueos(){
 		return (_listaBloqueos.size());
 	}
 	
 	/**
-     * Añade un bloqueo al ArrayList de bloqueos.
+     * AÃ±ade un bloqueo al ArrayList de bloqueos.
      * 
      * @param bloqueo
      * 
-     * @return <code> true </code> Si el bloqueo se ha añadido al ArrayList.
+     * @return <code> true </code> Si el bloqueo se ha aÃ±adido al ArrayList.
      * @return <code> false </code> El bloqueo ya estaba realizado.
      */
 	public boolean anyadirBloqueo(Bloqueo bloqueo) {
@@ -126,7 +125,7 @@ public class Bloqueos {
 	/**
      * Comprueba que no exista un bloqueo en el mismo periodo.
      * 
-     * @return <code> true </code> Si no existe ningún bloqueo en ese periodo.
+     * @return <code> true </code> Si no existe ningÃºn bloqueo en ese periodo.
      * @return <code> false </code> Si ya hay un bloqueo realizado.
      */
 	public boolean comprobarBloqueo (Fecha inicio, Fecha fin) {
@@ -161,7 +160,7 @@ public class Bloqueos {
 	}
 	
 	/*
-     * Método que desplaza a la derecha los elementos del ArrayList.
+     * MÃ©todo que desplaza a la derecha los elementos del ArrayList.
      * 
      * @param Posicion en la que se inserta el objeto
      * 
@@ -175,11 +174,11 @@ public class Bloqueos {
 	}
 	
 	/**
-     * Método que inserta bloqueo en el ArrayList.
+     * MÃ©todo que inserta bloqueo en el ArrayList.
      * 
      * @param bloqueo
      * 
-     * @param Posición en la que se inserta el objeto bloqueo en la lista.
+     * @param PosiciÃ³n en la que se inserta el objeto bloqueo en la lista.
      * 
      * @return <code> true </code> El objeto se inserta en la lista.
      * @return <code> false </code> El objeto no se puede insertar.
@@ -199,11 +198,11 @@ public class Bloqueos {
 	}
 	
 	/**
-     * Método que devuelve la posición del bloqueo en el ArrayList.
+     * MÃ©todo que devuelve la posiciÃ³n del bloqueo en el ArrayList.
      * 
      * @param bloqueo
      * 
-     * @return La primera posición en la que se encuentre el objeto bloqueo.
+     * @return La primera posiciÃ³n en la que se encuentre el objeto bloqueo.
      * 
      
 	public int buscarPosicion(Bloqueo bloqueo){
