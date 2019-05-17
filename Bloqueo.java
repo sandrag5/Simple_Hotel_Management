@@ -1,7 +1,5 @@
 /**
- * Clase que contiene los par醡etros de los bloqueos realizados.
- *
- * @author Nuria Rodr韌uez Jim閚ez y Sandra Garc韆-Si馿riz Herrador
+ * Clase que contiene los par谩metros de los bloqueos realizados.
  *
  */
 public class Bloqueo {
@@ -10,7 +8,7 @@ public class Bloqueo {
      */
     private Fecha _fecInicio;
     /**
-     * Fecha de finalizaci髇 del bloqueo.
+     * Fecha de finalizaci贸n del bloqueo.
      */
     private Fecha _fecFin;
     /**
@@ -18,26 +16,26 @@ public class Bloqueo {
      */
     private String _nombre;
     /**
-     * Fecha de realizaci髇 del bloqueo.
+     * Fecha de realizaci贸n del bloqueo.
      */
     private Fecha _fecRealizacion;
     /**
-     * N鷐ero de d韆s del bloqueo.
+     * N煤mero de d铆as del bloqueo.
      */
     private int _numDias;
     
     /**
-     * Constructor que recibe los par醡etros del bloqueo.
+     * Constructor que recibe los par谩metros del bloqueo.
      * 
      * @param Fecha de inicio
      * 
-     * @param Fecha de finalizaci髇
+     * @param Fecha de finalizaci贸n
      * 
      * @param Nombre
      * 
-     * @param Fecha de realizaci髇
+     * @param Fecha de realizaci贸n
      * 
-     * @param N鷐ero de d韆s
+     * @param N煤mero de d铆as
      * 
   	*/
      public Bloqueo(Fecha inicio, Fecha finalizacion, String nombre, Fecha realizacion, int numDias) {
@@ -65,9 +63,9 @@ public class Bloqueo {
      
      /**
       * 
-      * Devuelve la fecha de finalizaci髇 del bloqueo.
+      * Devuelve la fecha de finalizaci贸n del bloqueo.
       * 
-      * @return Fecha de finalizaci髇 del bloqueo.
+      * @return Fecha de finalizaci贸n del bloqueo.
       * 
       */
      public Fecha getFecFin() {
@@ -95,9 +93,9 @@ public class Bloqueo {
      
      /**
       * 
-      * Devuelve la fecha de realizaci髇 del bloqueo.
+      * Devuelve la fecha de realizaci贸n del bloqueo.
       * 
-      * @return Fecha de realizaci髇 del bloqueo.
+      * @return Fecha de realizaci贸n del bloqueo.
       * 
       */
      public Fecha getFecRealizacion() {
@@ -110,9 +108,9 @@ public class Bloqueo {
      
      /**
       * 
-      * Devuelve el n鷐ero de d韆s que dura el bloqueo.
+      * Devuelve el n煤mero de d铆as que dura el bloqueo.
       * 
-      * @return N鷐ero de d韆s del bloqueo.
+      * @return N煤mero de d铆as del bloqueo.
       * 
       */
      public int getNumDias() {
@@ -124,7 +122,7 @@ public class Bloqueo {
 	}
      
      /**
-      * Constructor de copia. Se crea una copia por par醡etros para poder comparar el bloqueo. 
+      * Constructor de copia. Se crea una copia por par谩metros para poder comparar el bloqueo. 
       *
       * @param otroBloqueo
       *            Bloqueo a copiar.
@@ -139,13 +137,13 @@ public class Bloqueo {
      
      /**
       * 
-      * M閠odo para comparar dos bloqueos.
+      * M茅todo para comparar dos bloqueos.
       * 
       * @param otraBloqueo
       *			Bloqueo a comparar
-      * @return <code> -1 </code> Fecha de finalizaci髇 de este bloqueo es anterior a la fecha de inicio del otro bloqueo.
-      * @return <code> 0 </code> Fecha de inicio de este bloqueo con la fecha de finalizaci髇 del otro bloqueo son iguales.
-      * @return <code> 1 </code> Fecha de inicio de este bloqueo es posterior a la fecha de finalizaci髇 del otro bloqueo.
+      * @return <code> -1 </code> Fecha de finalizaci贸n de este bloqueo es anterior a la fecha de inicio del otro bloqueo.
+      * @return <code> 0 </code> Fecha de inicio de este bloqueo con la fecha de finalizaci贸n del otro bloqueo son iguales.
+      * @return <code> 1 </code> Fecha de inicio de este bloqueo es posterior a la fecha de finalizaci贸n del otro bloqueo.
       */
      int compareTo(Bloqueo otroBloqueo){
         int comparador; 
