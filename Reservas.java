@@ -3,7 +3,6 @@ import java.util.ArrayList;
 /**
  * Clase que contiene el array de reservas.
  *
- * @author Nuria Rodríguez Jiménez y Sandra García-Siñeriz Herrador
  * 
  */
 public class Reservas {
@@ -46,9 +45,9 @@ public class Reservas {
 	}
 
 	/**
-     * Agregado de una reserva a una habitación.
+     * Agregado de una reserva a una habitaciÃ³n.
      * 
-     * @param tamaño
+     * @param tamaÃ±o
      */
 	Reservas (int tamanyo) {
 		_siguiente = 0;
@@ -56,20 +55,20 @@ public class Reservas {
 	}
 	
 	/**
-	 * Método para obtener el número de reservas, que será el tamaño del array.
+	 * MÃ©todo para obtener el nÃºmero de reservas, que serÃ¡ el tamaÃ±o del array.
 	 * 
-	 * @return Tamaño del ArrayList
+	 * @return TamaÃ±o del ArrayList
 	 */
 	public int obtenerNumReservas(){
 		return (_listaReservas.size());
 	}
 	
 	/**
-     * Añade una reserva al ArrayList de reservas.
+     * AÃ±ade una reserva al ArrayList de reservas.
      * 
      * @param reserva
      * 
-     * @return <code> true </code> Si se ha añadido la reserva.
+     * @return <code> true </code> Si se ha aÃ±adido la reserva.
      * @return <code> false </code> Si la reserva ya estaba realizada.
      */
 	public boolean anyadirReserva(Reserva reserva) {
