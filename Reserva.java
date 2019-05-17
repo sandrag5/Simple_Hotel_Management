@@ -1,7 +1,6 @@
 /**
- * Clase que contiene los par醡etros de las reservas.
+ * Clase que contiene los par谩metros de las reservas.
  *
- * @author Nuria Rodr韌uez Jim閚ez y Sandra Garc韆-Si馿riz Herrador
  *
  */
 public class Reserva {
@@ -10,7 +9,7 @@ public class Reserva {
      */
      private Fecha _fecInicio;
     /**
-     * Fecha de finalizaci髇 de la reserva.
+     * Fecha de finalizaci贸n de la reserva.
      */
      private Fecha _fecFin;
      /**
@@ -18,7 +17,7 @@ public class Reserva {
       */
      private String _nombre;
      /**
-      * Fecha de realizaci髇 de la reserva.
+      * Fecha de realizaci贸n de la reserva.
       */
      private Fecha _fecRealizacion;
      /**
@@ -31,11 +30,11 @@ public class Reserva {
       * 
       * @param Fecha de inicio
       * 
-      * @param Fecha de finalizaci髇
+      * @param Fecha de finalizaci贸n
       * 
       * @param Nombre del cliente
       * 
-      * @param Fecha de realizaci髇
+      * @param Fecha de realizaci贸n
       * 
       * @param Precio
       * 
@@ -65,9 +64,9 @@ public class Reserva {
       
       /**
        * 
-       * Devuelve la fecha de finalizaci髇 de la reserva.
+       * Devuelve la fecha de finalizaci贸n de la reserva.
        * 
-       * @return Fecha de finalizaci髇.
+       * @return Fecha de finalizaci贸n.
        * 
        */
       public Fecha getFecFin() {
@@ -95,9 +94,9 @@ public class Reserva {
       
       /**
        * 
-       * Devuelve la fecha de realizaci髇 de la reserva.
+       * Devuelve la fecha de realizaci贸n de la reserva.
        * 
-       * @return Fecha de realizaci髇.
+       * @return Fecha de realizaci贸n.
        * 
        */
       public Fecha getFecRealizacion() {
@@ -124,7 +123,7 @@ public class Reserva {
  	} 
       
       /**
-       * Constructor de copia. Se crea una copia por par醡etros para poder comparar la reserva. 
+       * Constructor de copia. Se crea una copia por par谩metros para poder comparar la reserva. 
        *
        * @param otraReserva
        *            Reserva a copiar.
@@ -139,13 +138,13 @@ public class Reserva {
       
       /**
        * 
-       * M閠odo para comparar dos reservas.
+       * M茅todo para comparar dos reservas.
        * 
        * @param otraReserva
        *			Reserva a comparar
-       * @return <code> -1 </code> Fecha de finalizaci髇 de esta reserva es anterior a la fecha de inicio de la otra reserva.
-       * @return <code> 0 </code> Fechas de inicio de esta reserva con la fecha de finalizaci髇 de la otra reserva son iguales.
-       * @return <code> 1 </code> Fecha de inicio de esta reserva es posterior a la fecha de finalizaci髇 de la otra reserva.
+       * @return <code> -1 </code> Fecha de finalizaci贸n de esta reserva es anterior a la fecha de inicio de la otra reserva.
+       * @return <code> 0 </code> Fechas de inicio de esta reserva con la fecha de finalizaci贸n de la otra reserva son iguales.
+       * @return <code> 1 </code> Fecha de inicio de esta reserva es posterior a la fecha de finalizaci贸n de la otra reserva.
        */
       int compareTo(Reserva otraReserva){
          int comparadorReservas; 
