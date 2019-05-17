@@ -1,7 +1,5 @@
 /**
- * Clase que contiene la información del hotel.
- *
- * @author Nuria Rodríguez Jiménez y Sandra García-Siñeriz Herrador
+ * Clase que contiene la informaciÃ³n del hotel.
  * 
  */
 public class Hotel {
@@ -10,11 +8,11 @@ public class Hotel {
      */
     private String _nombre;
     /**
-     * Categoría del hotel.
+     * CategorÃ­a del hotel.
      */
     private String _categoria;
     /**
-     * Número de habitación.
+     * NÃºmero de habitaciÃ³n.
      */
     private int _numHabitacion;
     /**
@@ -22,14 +20,14 @@ public class Hotel {
      */
     private Habitaciones[] _habitaciones;
     /**
-     * Número total de habitaciones del hotel.
+     * NÃºmero total de habitaciones del hotel.
      */
 	private static final int NUM_MAX_HABITACIONES = 10;
 	
 	/**
      * Constructor que obtiene los datos del hotel.
      * 
-     * @param Categoría del hotel
+     * @param CategorÃ­a del hotel
      * 
      * @param Nombre del hotel
      * 
@@ -55,9 +53,9 @@ public class Hotel {
 	}
     /**
      * 
-     * Devuelve la categoría del hotel.
+     * Devuelve la categorÃ­a del hotel.
      * 
-     * @return Categoría.
+     * @return CategorÃ­a.
      * 
      */
 	public String get_categoria() {
@@ -69,9 +67,9 @@ public class Hotel {
 	}
     /**
      * 
-     * Devuelve el número de habitación del hotel.
+     * Devuelve el nÃºmero de habitaciÃ³n del hotel.
      * 
-     * @return Número de habitación
+     * @return NÃºmero de habitaciÃ³n
      * 
      */
 	public int get_numHabitacion() {
@@ -97,7 +95,7 @@ public class Hotel {
 	}
     /**
      * 
-     * Devuelve el número total de habitaciones.
+     * Devuelve el nÃºmero total de habitaciones.
      * 
      * @return Total de habitaciones
      * 
@@ -107,7 +105,7 @@ public class Hotel {
 	}
 	
 	/**
-     * Método para añadir una reserva.
+     * MÃ©todo para aÃ±adir una reserva.
      * 
      * @param reserva
      * 
@@ -128,7 +126,7 @@ public class Hotel {
 	}
 	
 	/**
-     * Método para bloquear una suite.
+     * MÃ©todo para bloquear una suite.
      * 
      * @param bloqueo
      * 
@@ -149,12 +147,12 @@ public class Hotel {
 	}
 	
 	/**
-     * Método para confirmar un bloqueo.
+     * MÃ©todo para confirmar un bloqueo.
      * 
      * @param bloqueo
      * 
      * @return <code> true </code> Se confirma el bloqueo.
-     * @return <code> false </code> Confirmación del bloqueo ya realizada.
+     * @return <code> false </code> ConfirmaciÃ³n del bloqueo ya realizada.
      */
 	public boolean confirmarBloqueo(Bloqueo bloqueo) {
 		boolean correcto;
@@ -169,12 +167,12 @@ public class Hotel {
 	}
 	
 	/**
-     * Método para añadir un bloqueo.
+     * MÃ©todo para aÃ±adir un bloqueo.
      * 
      * @param bloqueo
      * 
-     * @return <code> true </code> Se añade el bloqueo
-     * @return <code> false </code> Bloqueo añadido anteriormente.
+     * @return <code> true </code> Se aÃ±ade el bloqueo
+     * @return <code> false </code> Bloqueo aÃ±adido anteriormente.
      */
 	public boolean anyadirBloqueo(Bloqueo bloqueo) {
 		boolean correcto;
@@ -190,11 +188,11 @@ public class Hotel {
 	}
 
 	/**
-     * Método para listar las habitaciones libres.
+     * MÃ©todo para listar las habitaciones libres.
      * 
      * @param Fecha de inicio
      * 
-     * @param Fecha de finalización
+     * @param Fecha de finalizaciÃ³n
      * 
      * @return <code> true </code> Se han listado todas las habitaciones libres.
      * @return <code> false </code> No se han listado.
@@ -212,12 +210,12 @@ public class Hotel {
 	}
 	
 	/**
-     * Método para añadir habitación a la lista de habitaciones libres.
+     * MÃ©todo para aÃ±adir habitaciÃ³n a la lista de habitaciones libres.
      * 
-     * @param Nueva habitación
+     * @param Nueva habitaciÃ³n
      * 
-     * @return <code> true </code> Se ha añadido la habitación
-     * @return <code> false </code> No se ha podido añadir la habitación.
+     * @return <code> true </code> Se ha aÃ±adido la habitaciÃ³n
+     * @return <code> false </code> No se ha podido aÃ±adir la habitaciÃ³n.
      */
 	public boolean anyadirHabitacion(Habitacion nuevaHabitacion) {
 		boolean correcto = true;
