@@ -3,7 +3,6 @@ import java.util.ArrayList;
 /**
  * Menu del sistema.
  * 
- * @author Nuria Rodríguez Jiménez y Sandra García-Siñeriz Herrador.
  * @version 1.0
  */
 public class MenuHotel {
@@ -44,7 +43,7 @@ public class MenuHotel {
 		String opcion;
 		boolean correcta, salir;
 		
-		String nombreCliente = new String ("Alejandro Rodríguez");
+		String nombreCliente = new String ("Alejandro RodrÃ­guez");
 		Fecha fechaInicio = new Fecha (03, 01, 2014);
 		Fecha fechaFin = new Fecha (07, 01, 2014);
 		Fecha fechaRealizacion = new Fecha (02, 01, 2014);
@@ -94,7 +93,7 @@ public class MenuHotel {
 		case '2': //Disponibilidad
 					
 			if (opcionMostrarDisponibilidad() == false) {
-				System.out.println("No hay ninguna habitación disponible en ese periodo o no ha introducido los datos correctamente. Vuelva a intentarlo.");
+				System.out.println("No hay ninguna habitaciÃ³n disponible en ese periodo o no ha introducido los datos correctamente. Vuelva a intentarlo.");
 				salir = true;
 			}
 			
@@ -105,7 +104,7 @@ public class MenuHotel {
 			salir = false;
 			break;
 
-		case '3': //Reservar habitación
+		case '3': //Reservar habitaciÃ³n
 					
 			if (opcionReservarHabitacion(reserva) == false) {
 				System.out.println("No se puede realizar la reserva.");
@@ -163,7 +162,7 @@ public class MenuHotel {
 	
 		boolean correcto = false;
 			/*if (Reservas.obtenerNumReservas() != 0){////////////////////////////////FALLO
-				//Llamar método recorrerlistareservas
+				//Llamar mÃ©todo recorrerlistareservas
 				correcto = true; 
 			} 
 			else 
@@ -201,19 +200,19 @@ public class MenuHotel {
 	}
 	
 	/**
-	 * Reservar habitación.
+	 * Reservar habitaciÃ³n.
 	 * 
 	 * @param reserva
 	 * 
-	 * @return <code> true </code> si se ha reservado la habitación.
-	 * @return <code> false </code> la habitación ya está reservada.
+	 * @return <code> true </code> si se ha reservado la habitaciÃ³n.
+	 * @return <code> false </code> la habitaciÃ³n ya estÃ¡ reservada.
 	 *         
 	 */
 	private boolean opcionReservarHabitacion(Reserva reserva) {
 		
 		boolean correcto = false;
 			/*if (Hotel.anyadirReserva(reserva) == true) {
-				correcto = true; //Se añade reserva a la lista de reservas
+				correcto = true; //Se aÃ±ade reserva a la lista de reservas
 			}
 			else
 			{
@@ -227,14 +226,14 @@ public class MenuHotel {
 	 * Bloquear suite.
 	 * 
 	 * @return <code> true </code> si se ha bloqueado la suite.
-	 * @return <code> false </code> No está disponible.
+	 * @return <code> false </code> No estÃ¡ disponible.
 	 *         
 	 */
 	private boolean opcionBloquearSuite() {
 	
 		boolean correcto = false;
 		/*	if (Hotel.anyadirBloqueo(bloqueo) == true) {
-				correcto = true; //Se añade bloqueo a la lista de bloqueos
+				correcto = true; //Se aÃ±ade bloqueo a la lista de bloqueos
 			}
 			else
 			{
@@ -247,7 +246,7 @@ public class MenuHotel {
 	/**
 	 * Confirmar Bloqueo del hotel.
 	 * 
-	 * @param Número de habitación
+	 * @param NÃºmero de habitaciÃ³n
 	 * 
 	 * @param Fecha de bloqueo
 	 * 
@@ -297,12 +296,12 @@ public class MenuHotel {
 	}
 	
 	/**
-	 * Mostrar habitación reservada.
+	 * Mostrar habitaciÃ³n reservada.
 	 * 
 	 * @param reserva
 	 * 
-	 * @return <code> true </code> si se ha mostrado la habitación.
-	 * @return <code> false </code> no hay ninguna habitación reservada.
+	 * @return <code> true </code> si se ha mostrado la habitaciÃ³n.
+	 * @return <code> false </code> no hay ninguna habitaciÃ³n reservada.
 	 *         
 	 */
 	private boolean mostrarHabitacionReservada(Reserva reserva) {
