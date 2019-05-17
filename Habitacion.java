@@ -1,20 +1,19 @@
 /**
- * Clase que contiene los parámetros de las habitaciones.
+ * Clase que contiene los parÃ¡metros de las habitaciones.
  *
- * @author Nuria Rodríguez Jiménez y Sandra García-Siñeriz Herrador
  * 
  */
 public class Habitacion {
 	/**
-     * Número de habitación.
+     * NÃºmero de habitaciÃ³n.
      */
     private int _numHabitacion;
     /**
-     * Tipo de habitación.
+     * Tipo de habitaciÃ³n.
      */
     private String _tipo;
     /**
-     * Precio de la habitación.
+     * Precio de la habitaciÃ³n.
      */
     private int _precio;
     /**
@@ -26,19 +25,19 @@ public class Habitacion {
      */
     private Bloqueos _bloqueos;
     /**
-     * Número máximo de bloqueos.
+     * NÃºmero mÃ¡ximo de bloqueos.
      */
 	private final int NUM_MAX_BLOQUEOS = 100;
 	/**
-     * Número máximo de reservas.
+     * NÃºmero mÃ¡ximo de reservas.
      */
 	private final int NUM_MAX_RESERVAS = 100;
 	
 	 /**
      * 
-     * Devuelve el número de habitación.
+     * Devuelve el nÃºmero de habitaciÃ³n.
      * 
-     * @return Número de habitación.
+     * @return NÃºmero de habitaciÃ³n.
      * 
      */
 	public int get_numHabitacion() {
@@ -50,9 +49,9 @@ public class Habitacion {
 	}
 	 /**
      * 
-     * Devuelve el tipo de habitación.
+     * Devuelve el tipo de habitaciÃ³n.
      * 
-     * @return Tipo de habitación.
+     * @return Tipo de habitaciÃ³n.
      * 
      */
 	public String get_tipo() {
@@ -78,7 +77,7 @@ public class Habitacion {
 	}
 	 /**
      * 
-     * Devuelve las reservas de la habitación.
+     * Devuelve las reservas de la habitaciÃ³n.
      * 
      * @return Reservas.
      * 
@@ -106,9 +105,9 @@ public class Habitacion {
 	}
 	 /**
      * 
-     * Devuelve el número máximo de bloqueos.
+     * Devuelve el nÃºmero mÃ¡ximo de bloqueos.
      * 
-     * @return Número máximo de bloqueos.
+     * @return NÃºmero mÃ¡ximo de bloqueos.
      * 
      */
 	public int getNumMaxBloqueos() {
@@ -116,9 +115,9 @@ public class Habitacion {
 	}
 	 /**
      * 
-     * Devuelve el número máximo de reservas.
+     * Devuelve el nÃºmero mÃ¡ximo de reservas.
      * 
-     * @return Número máximo de reservas.
+     * @return NÃºmero mÃ¡ximo de reservas.
      * 
      */
 	public int getNumMaxReservas() {
@@ -126,13 +125,13 @@ public class Habitacion {
 	}
 
 	/**
-     * Constructor de una habitación.
+     * Constructor de una habitaciÃ³n.
      * 
-     * @param Número de habitación
+     * @param NÃºmero de habitaciÃ³n
      * 
-     * @param Tipo de habitación
+     * @param Tipo de habitaciÃ³n
      * 
-     * @param Precio de la habitación
+     * @param Precio de la habitaciÃ³n
      */
 	public Habitacion(int numeroHab, String tipo, int precio) {
      	_numHabitacion = numeroHab;
@@ -143,7 +142,7 @@ public class Habitacion {
      }
 
 	/**
-     * Método para identificar una suite.
+     * MÃ©todo para identificar una suite.
      * 
      * @return <code> true </code> Si es una suite.
      * @return <code> false </code> Si no es una suite.
@@ -160,14 +159,14 @@ public class Habitacion {
 	 }
 
 	/**
-     * Método para saber la disponibilidad de una habitación.
+     * MÃ©todo para saber la disponibilidad de una habitaciÃ³n.
      * 
      * @param Fecha de inicio de la reserva o bloqueo
      * 
-     * @param Fecha de finalización de la reserva o bloqueo
+     * @param Fecha de finalizaciÃ³n de la reserva o bloqueo
      * 
-     * @return <code> true </code> Si la habitación está disponible.
-     * @return <code> false </code> Si la habitación está reservada, y en caso de ser una suite, está reservada o bloqueada.
+     * @return <code> true </code> Si la habitaciÃ³n estÃ¡ disponible.
+     * @return <code> false </code> Si la habitaciÃ³n estÃ¡ reservada, y en caso de ser una suite, estÃ¡ reservada o bloqueada.
      */
 	public boolean estaLibreEnPeriodo(Fecha fecInicio, Fecha fecFin) {
         boolean librePeriodo = true;       
@@ -187,33 +186,33 @@ public class Habitacion {
 	}
 
 	/**
-     * Método para crear una reserva.
+     * MÃ©todo para crear una reserva.
      * 
      * @param reserva
      * 
-     * @return Reserva de la habitación.
+     * @return Reserva de la habitaciÃ³n.
      */
 	public boolean crearReserva(Reserva reserva) {
 	    return _reservas.anyadirReserva(reserva);
 	  } 
 	
 	/**
-     * Método para bloquear una suite.
+     * MÃ©todo para bloquear una suite.
      * 
      * @param bloqueo
      * 
-     * @return Bloqueo de la habitación.
+     * @return Bloqueo de la habitaciÃ³n.
      */
 	public boolean bloquearSuite(Bloqueo bloqueo) {
 	    return _bloqueos.anyadirBloqueo(bloqueo);
 	  } 
 	
 	/**
-     * Método para confirmar un bloqueo ya realizado anteriormente.
+     * MÃ©todo para confirmar un bloqueo ya realizado anteriormente.
      * 
      * @param bloqueo
      * 
-     * @return Bloqueo añadido a la lista de reservas.
+     * @return Bloqueo aÃ±adido a la lista de reservas.
      */
 	public boolean confirmarBloqueo(Bloqueo bloqueo){
 	/*	Bloqueo bloqueo = new Bloqueo(inicio, finalizacion, nombre, null, 0);
