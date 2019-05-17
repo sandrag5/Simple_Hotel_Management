@@ -1,14 +1,13 @@
 import java.util.ArrayList;
 
 /**
- * Clase que contiene las características de las habitaciones.
+ * Clase que contiene las caracterÃ­sticas de las habitaciones.
  *
- * @author Nuria Rodríguez Jiménez y Sandra García-Siñeriz Herrador
  *
  */	
 	public class Habitaciones {
     /**
-     * Siguiente habitación.
+     * Siguiente habitaciÃ³n.
      */
     private int _siguiente;
     /** 
@@ -47,7 +46,7 @@ import java.util.ArrayList;
     /**
      * Agregado de habitaciones.
      *
-     * @param tamaño
+     * @param tamaÃ±o
      *           
      */
     Habitaciones (int tamanyo) { 
@@ -56,7 +55,7 @@ import java.util.ArrayList;
     }
     
     /**
-     * Método para crear reservas.
+     * MÃ©todo para crear reservas.
      * 
      * @param reserva.
      * 
@@ -64,19 +63,19 @@ import java.util.ArrayList;
      * @return <code> false </code>
      * 
      */
-    /*public boolean crearReserva(Reserva reserva){ YA ESTÁ CREADO EN HABITACIÓN IGUAL QUE BLOQUEAR SUITE Y CONFIRMAR BLOQUEO
+    /*public boolean crearReserva(Reserva reserva){ YA ESTÃ CREADO EN HABITACIÃ“N IGUAL QUE BLOQUEAR SUITE Y CONFIRMAR BLOQUEO
     	boolean creada= true;
     	
     	return creada;
     */
     
     /**
-     * Método para listar las habitaciones libres.
+     * MÃ©todo para listar las habitaciones libres.
      *
 	 * @param Fecha inicio
-	 * @param Fecha finalización
+	 * @param Fecha finalizaciÃ³n
      */
-    private void listarHabsLibres(Fecha inicio, Fecha finalizacion) { //¿qué hay que hacer con fecha inicio&&fin?
+    private void listarHabsLibres(Fecha inicio, Fecha finalizacion) { //Â¿quÃ© hay que hacer con fecha inicio&&fin?
     	int listarHabitacionesLibres=0;
     	for (int i=0; i<_listaHabitaciones.size();i++)
     	{
@@ -88,12 +87,12 @@ import java.util.ArrayList;
     }
     
     /**
-     * Método para listar las habitaciones reservadas.
+     * MÃ©todo para listar las habitaciones reservadas.
      *
 	 * @param Fecha inicio
-	 * @param Fecha finalización
+	 * @param Fecha finalizaciÃ³n
      */
-     private void listarHabsReservadas(Fecha inicio, Fecha finalizacion) { //¿qué hay que hacer con fecha inicio&&fin?
+     private void listarHabsReservadas(Fecha inicio, Fecha finalizacion) { //Â¿quÃ© hay que hacer con fecha inicio&&fin?
     	 int listarHabitacionesReservadas= 0;
     	 for (int i=0;i<_listaHabitaciones.size();i++)
     	 {
@@ -105,12 +104,12 @@ import java.util.ArrayList;
     
     }
      /** 
-      * Añade al ArrayList de reservas una habitación. 
+      * AÃ±ade al ArrayList de reservas una habitaciÃ³n. 
       * 
-      * @param Nueva habitación
+      * @param Nueva habitaciÃ³n
       * 
-      * @return <code> true </code> Se añade la habitación a la reserva.
-      * @return <code> false </code> No se añade la habitación.
+      * @return <code> true </code> Se aÃ±ade la habitaciÃ³n a la reserva.
+      * @return <code> false </code> No se aÃ±ade la habitaciÃ³n.
       */
      public boolean anyadirReservas(Habitacion nuevaHabitacion) { 
     	 boolean correcto = true; 
@@ -127,14 +126,14 @@ import java.util.ArrayList;
      }
     
      /** 
-      * Método que inserta una habitacion en el ArrayList. 
+      * MÃ©todo que inserta una habitacion en el ArrayList. 
       * 
-      * @param Nueva habitación
+      * @param Nueva habitaciÃ³n
       * 
-      * @param Posición en la que se inserta la habitación
+      * @param PosiciÃ³n en la que se inserta la habitaciÃ³n
       * 
-      * @return <code> true </code> Se inserta la habitación
-      * @return <code> false </code> No se inserta la habitación.
+      * @return <code> true </code> Se inserta la habitaciÃ³n
+      * @return <code> false </code> No se inserta la habitaciÃ³n.
       */
      public boolean insertarHabitacion(Habitacion nuevaHabitacion, int posicionInsertar) { 
          boolean correcto= true; 
@@ -158,11 +157,11 @@ import java.util.ArrayList;
      } 
        
      /** 
-      * Método que devuelve la posición de la habitacion en el ArrayList. 
+      * MÃ©todo que devuelve la posiciÃ³n de la habitacion en el ArrayList. 
       * 
-      * @param Nueva habitación
+      * @param Nueva habitaciÃ³n
       * 
-      * @return Primera posición del objeto habitación en el ArrayList
+      * @return Primera posiciÃ³n del objeto habitaciÃ³n en el ArrayList
       * 
       */
      public int buscarPosicion(Habitacion nuevaHabitacion){ 
