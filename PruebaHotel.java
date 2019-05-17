@@ -3,7 +3,6 @@ import java.util.ArrayList;
 /**
  * Clase de prueba del sistema.
  * 
- * @author Nuria Rodríguez Jiménez y Sandra García-Siñeriz Herrador.
  * @version 1.0
  */
 public class PruebaHotel {
@@ -25,17 +24,17 @@ public class PruebaHotel {
 		} else {
 			hotel = new Hotel("Alojamiento Rural", " 'El Descanso'");
 			
-			// Metodos para añadir informacion al Hotel.
+			// Metodos para aÃ±adir informacion al Hotel.
 			/**
-			 * Método que invoca a las habitaciones del hotel.
+			 * MÃ©todo que invoca a las habitaciones del hotel.
 			 */
 			crearHabitaciones(hotel);
 			/**
-			 * Método que invoca a las reservas del hotel.
+			 * MÃ©todo que invoca a las reservas del hotel.
 			 */
 			crearReservas();
 			/**
-			 * Método que invoca a los bloqueos del hotel.
+			 * MÃ©todo que invoca a los bloqueos del hotel.
 			 */
 			crearBloqueos();
 			
@@ -48,7 +47,7 @@ public class PruebaHotel {
 	}
 	
 	/**
-	 * Se crea y añade al Hotel una lista de habitaciones:
+	 * Se crea y aÃ±ade al Hotel una lista de habitaciones:
 	 * 
 	 * @param hotel
 	 */
@@ -66,15 +65,15 @@ public class PruebaHotel {
 	}
 
 	/**
-	 * Se crea y añade al Hotel una lista de reservas:
+	 * Se crea y aÃ±ade al Hotel una lista de reservas:
 	 */
 	private static void crearReservas() {
 		ArrayList<Reserva> listaReservas = new ArrayList<Reserva>(){
 			{
 				add(new Reserva(new Fecha(5,9,2013),new Fecha(10,9,2013), new String("Javier"),new Fecha(20,8,2013),65));
 				add(new Reserva(new Fecha(15,9,2013),new Fecha(18,9,2013), new String("Elena"),new Fecha(4,9,2013),50));
-				add(new Reserva(new Fecha(21,9,2013),new Fecha(28,9,2013), new String("Rocío"),new Fecha(15,9,2013),49));
-				add(new Reserva(new Fecha(29,9,2013),new Fecha(30,9,2013), new String("Héctor"),new Fecha(25,9,2013),75));
+				add(new Reserva(new Fecha(21,9,2013),new Fecha(28,9,2013), new String("RocÃ­o"),new Fecha(15,9,2013),49));
+				add(new Reserva(new Fecha(29,9,2013),new Fecha(30,9,2013), new String("HÃ©ctor"),new Fecha(25,9,2013),75));
 				add(new Reserva(new Fecha(3,10,2013),new Fecha(6,10,2013), new String("Jorge"),new Fecha(1,10,2013),85)); 
 				add(new Reserva(new Fecha(9,10,2013),new Fecha(15,10,2013), new String("Cristian"),new Fecha(3,10,2013),56));
 				add(new Reserva(new Fecha(21,11,2013),new Fecha(26,11,2013), new String("Carlos"),new Fecha(20,11,2013),50));
@@ -86,7 +85,7 @@ public class PruebaHotel {
 	}
 	
 	/**
-	 * Se crea y añade al Hotel una lista de bloqueos:
+	 * Se crea y aÃ±ade al Hotel una lista de bloqueos:
 	 */
 	private static void crearBloqueos() {
 		ArrayList<Bloqueo> listaBloqueos = new ArrayList<Bloqueo>(){
